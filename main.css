@@ -1,0 +1,17 @@
+main {
+	background: #D4E7EF;
+	white-space: nowrap;
+}
+#gameplay-section, #editor-section {
+	padding: 1em;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+textarea {
+	width: 30em;
+	font-family: monospace;
+	font-size: 15px;
+}
+canvas {
+	border: 1px solid rgba(0,0,0,0.2);
+	background: rgba(255,255,255,0.4);
+}

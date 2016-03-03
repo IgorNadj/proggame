@@ -1,12 +1,33 @@
 <html>
 	<head>
-		<script src="app.js"></script>
+		<link rel="stylesheet" href="main.css"> 
+		<script>
+			var levels = {
+				'level1': 'Tutorial 1'
+			}
+			window.onload = function(){
+				var levelIDs = Object.keys(levels);
+				for(var i in levelIDs){
+					var levelID = levelIDs[i];
+					var li = document.createElement('li');
+					var a = document.createElement('a');
+					a.href = 'game.html#'+levelID;
+					a.innerText = levels[levelID];
+					li.appendChild(a);
+					document.getElementById('list').appendChild(li);
+				}
+			}
+		</script>
 	</head>
 	<body>
-		<h1>prog game</h1>
+		<header>
+			<h1>prog game</h1>
+		</header>
+		<main>
+			<h2>Select a level</h2>
+			<ul id="list">
 
-		<div id="editor"></div>
-		<div id="gameplay"></div>
-
+			</ul>
+		</main>
 	<body>
 </html>
